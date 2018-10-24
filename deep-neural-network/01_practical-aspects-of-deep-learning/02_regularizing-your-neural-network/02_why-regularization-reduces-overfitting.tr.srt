@@ -1,0 +1,463 @@
+1
+00:00:00,000 --> 00:00:03,025
+Neden düzenlileştirme (regularization) işlemi, aşırı öğrenme (overfitting) konusunda yardımcı olur?
+
+2
+00:00:03,025 --> 00:00:05,835
+Varyans problemlerini azaltmada neden yardımcı olur?
+
+3
+00:00:05,835 --> 00:00:10,920
+Nasıl çalıştığına dair bazı sezgiler kazanmak için birkaç örnek verelim.
+
+4
+00:00:10,920 --> 00:00:16,635
+Yüksek yanlılık (high bias), yüksek varyansı hatırlayalım.
+
+5
+00:00:16,635 --> 00:00:25,235
+Ve daha önceki videomdan böyle bir şeye benzeyen resimler çizdim.
+
+6
+00:00:25,235 --> 00:00:27,780
+Şimdi, uygun (fitting) büyük ve derin bir sinir ağını görelim.
+
+7
+00:00:27,780 --> 00:00:30,550
+Bunu çok büyük veya çok derin çizmediğimi biliyorum.
+
+8
+00:00:30,550 --> 00:00:34,630
+bazı sinir ağlarını ve şu anda aşırı öğrenmeyi düşünmedikçe.
+
+9
+00:00:34,630 --> 00:00:39,520
+W'nin J gibi bir maliyet fonksiyonuna sahipseniz
+
+10
+00:00:39,520 --> 00:00:44,390
+B, kayıpların toplamına eşittir.
+
+11
+00:00:44,390 --> 00:00:51,872
+Düzenlileştirme (regularization) için yapılan şey 
+
+12
+00:00:51,872 --> 00:00:56,395
+bu ekstra terimi eklemekti
+
+13
+00:00:56,395 --> 00:01:02,690
+ki bu terim ağırlık matrisini çok büyük olmasından dolayı cezalandırır.
+
+14
+00:01:02,690 --> 00:01:04,540
+Yani Frobenius normuydu.
+
+15
+00:01:04,540 --> 00:01:08,290
+Öyleyse neden L iki normu veya Frobenius normunu daralır ya da 
+
+16
+00:01:08,290 --> 00:01:12,445
+parametreler daha az aşırı öğrenmeye (overfitting) neden olur?
+
+17
+00:01:12,445 --> 00:01:14,515
+Sezginin bir parçası şudur ki : eğer siz
+
+18
+00:01:14,515 --> 00:01:17,354
+lambda'nın gerçekten çok büyük olması için düzenli hale getirme işlemini (regularization) gerçekleştirirseniz,
+
+19
+00:01:17,354 --> 00:01:20,005
+bu teşvik edici olacaktır
+
+20
+00:01:20,005 --> 00:01:24,535
+Ağırlık matrisleri W'i makul olarak sıfıra yakın olacak şekilde ayarlamak için
+
+21
+00:01:24,535 --> 00:01:30,460
+Yani sezginin bir parçası belki de ağırlık sıfıra yakın olacak şekilde ayarlanmış olabilir
+
+22
+00:01:30,460 --> 00:01:33,340
+birçok gizli birim için
+
+23
+00:01:33,340 --> 00:01:36,675
+Bu gizli birimlerin etkisini büyük ölçüde sıfırlayan
+
+24
+00:01:36,675 --> 00:01:37,990
+Ve eğer durum buysa,
+
+25
+00:01:37,990 --> 00:01:44,765
+o zaman bu kadar basitleştirilmiş sinir ağı çok daha küçük bir sinir ağına dönüşür.
+
+26
+00:01:44,765 --> 00:01:48,185
+Aslında, neredeyse bir lojistik regresyon birimi (logistic regression unit) gibi,
+
+27
+00:01:48,185 --> 00:01:50,005
+fakat büyük olasılıkla derin olacak şekilde yığılmış.
+
+28
+00:01:50,005 --> 00:01:51,805
+Ve böylece bu
+
+29
+00:01:51,805 --> 00:01:57,635
+sola çok yakın aşırı öğrenme durumundan (overfitting case) diğer yüksek önyargı durumuna (high bias case) götürecek.
+
+30
+00:01:57,635 --> 00:02:00,760
+Ama umarım lambda'nın bir ara değeri olur,
+
+31
+00:02:00,760 --> 00:02:04,820
+ortadaki bu doğru duruma daha yakın olacak bir sonuçla sonuçlanan.
+
+32
+00:02:04,820 --> 00:02:07,420
+Ama sezgiye göre, lambda'nın gerçekten çok büyük olması,
+
+33
+00:02:07,420 --> 00:02:10,510
+W'ye sıfıra yakın bir değere ayarlanacağıdır ki,
+
+34
+00:02:10,510 --> 00:02:13,280
+bu pratikte gerçek olmamaktadır.
+
+35
+00:02:13,280 --> 00:02:17,110
+Bunu, sıfırlama veya en azından gizli birimlerin
+
+36
+00:02:17,110 --> 00:02:19,270
+etkisini azaltma olarak düşünebiliriz
+
+37
+00:02:19,270 --> 00:02:21,935
+böylece daha basit bir ağ gibi hissedebileceğiniz şekilde sonuçlanır.
+
+38
+00:02:21,935 --> 00:02:25,920
+Sadece lojistik regresyon kullanıyormuşsunuz gibi yaklaşırlar.
+
+39
+00:02:25,920 --> 00:02:31,360
+Bir grup gizli birimin tamamen sıfırlanması sezgisi tam olarak doğru değil.
+
+40
+00:02:31,360 --> 00:02:35,225
+Gerçekte olan şey şu ki, tüm gizli birimleri kullanılacak,
+
+41
+00:02:35,225 --> 00:02:37,610
+ama her birinin daha küçük bir etkileri olacaktır.
+
+42
+00:02:37,610 --> 00:02:41,255
+Ama daha basit bir ağ ile sonuçlandırılır ve
+
+43
+00:02:41,255 --> 00:02:45,040
+sanki aşırı öğrenmeye (overfitting) daha az eğilimli daha küçük bir ağınız var gibi olur.
+
+44
+00:02:45,040 --> 00:02:47,715
+Yani bu sezginin daha çok yardımcı olduğunu
+
+45
+00:02:47,715 --> 00:02:50,765
+program alıştırmasını düzenlileştirdiğinizde,
+
+46
+00:02:50,765 --> 00:02:55,360
+aslında bu varyans azaltma sonuçlarının bazılarından kendiniz görüyorsunuz.
+
+47
+00:02:55,360 --> 00:02:57,955
+İşte ek sezgiye yönelik yeni bir yaklaşım
+
+48
+00:02:57,955 --> 00:03:01,535
+düzenlileştirmenin aşırı öğrenmeyi neden engellediği konusunda .
+
+49
+00:03:01,535 --> 00:03:04,030
+Ve bunun için,
+
+50
+00:03:04,030 --> 00:03:08,465
+bu gibi görünen tanh aktivasyon fonksiyonunu kullandığımızı varsayacağım.
+
+51
+00:03:08,465 --> 00:03:13,515
+z'nin g'si, z'nin tanh'ına eşittir.
+
+52
+00:03:13,515 --> 00:03:15,200
+Yani bu durumda,
+
+53
+00:03:15,200 --> 00:03:19,427
+Z oldukça küçük olduğu sürece,
+
+54
+00:03:19,427 --> 00:03:23,410
+böylece Z parametreleri sadece ufacık bir aralık üzerinde değer alırsa,
+
+55
+00:03:23,410 --> 00:03:28,165
+belki buralarda, o zaman sadece tanh fonksiyonunun lineer rejimini kullanıyor olursun.
+
+56
+00:03:28,165 --> 00:03:34,080
+Z daha büyük değerlere veya daha küçük değerlere dolaşmaya izin veriyorsa,
+
+57
+00:03:34,080 --> 00:03:37,490
+aktivasyon fonksiyonu daha az doğrusal olmaya başlar.
+
+58
+00:03:37,490 --> 00:03:40,605
+Bundan kurtulabileceğiniz sezgi, eğer
+
+59
+00:03:40,605 --> 00:03:42,750
+Düzenleme parametresi olan lambdanın büyük olmasıdır.
+
+60
+00:03:42,750 --> 00:03:46,530
+o zaman parametreler nispeten küçük olur
+
+61
+00:03:46,530 --> 00:03:51,290
+çünkü onlar bir cos fonksiyonuna büyük ceza olarak verilirler.
+
+62
+00:03:51,290 --> 00:03:56,740
+Ve böylece W'ler küçüktür çünkü Z W'e eşittir 
+
+63
+00:03:56,740 --> 00:04:02,550
+ve daha sonra teknik olarak b ile toplanır
+
+64
+00:04:02,550 --> 00:04:04,440
+ama eğer W çok küçük olma eğilimindeyse,
+
+65
+00:04:04,440 --> 00:04:07,140
+o zaman Z nispeten küçük olacaktır.
+
+66
+00:04:07,140 --> 00:04:10,830
+Ve özellikle, eğer Z nispeten küçük değerler alırsa,
+
+67
+00:04:10,830 --> 00:04:12,787
+tüm bu aralıkta,
+
+68
+00:04:12,787 --> 00:04:16,045
+Z'nin G'si doğrusal olacaktır.
+
+69
+00:04:16,045 --> 00:04:22,880
+Yani her katman kabaca doğrusal olacaktır.
+
+70
+00:04:22,880 --> 00:04:24,800
+Doğrusal regresyon gibi
+
+71
+00:04:24,800 --> 00:04:27,860
+Ve derslerde gördük ki, eğer her katman
+
+72
+00:04:27,860 --> 00:04:31,275
+doğrusal ise, tüm ağ sadece bir doğrusal ağdır.
+
+73
+00:04:31,275 --> 00:04:33,200
+Ve böylece çok derin bir ağ,
+
+74
+00:04:33,200 --> 00:04:35,930
+lineer aktivasyon fonksiyonuna sahip derin bir ağa sahip olduklarında,
+
+75
+00:04:35,930 --> 00:04:39,245
+sonunda sadece doğrusal bir fonksiyon hesaplayabilirler.
+
+76
+00:04:39,245 --> 00:04:43,700
+Yani bu çok fazla karmaşık kararlara uymuyor.
+
+77
+00:04:43,700 --> 00:04:49,085
+Çok doğrusal olmayan karar sınırları (Very non-linear decision boundaries) gerçekten
+
+78
+00:04:49,085 --> 00:04:52,940
+veri kümesinin aşırı öğrenilmesine izin verir
+
+79
+00:04:52,940 --> 00:04:57,485
+bir önceki slayttaki aşırı yüksek varyans durumunda gördüğümüz gibi.
+
+80
+00:04:57,485 --> 00:04:59,060
+Yani özetlemek gerekirse,
+
+81
+00:04:59,060 --> 00:05:01,665
+Düzenlileştirme (regularization) çok büyük olursa,
+
+82
+00:05:01,665 --> 00:05:03,873
+W parametreleri çok küçük
+
+83
+00:05:03,873 --> 00:05:06,350
+dolayısıyla Z'de küçük olacaktır.
+
+84
+00:05:06,350 --> 00:05:08,480
+şimdilik b'nin etkilerini görmezden gelirsek,
+
+85
+00:05:08,480 --> 00:05:12,935
+Z'nin nispeten küçük veya
+
+86
+00:05:12,935 --> 00:05:16,250
+gerçekten de, küçük bir değerler aralığında olduğunu söylemeliyim.
+
+87
+00:05:16,250 --> 00:05:19,890
+Ve böylece aktivasyon işlevi tanh ise,
+
+88
+00:05:19,890 --> 00:05:21,790
+dolayısıyla doğrusal olacağı söylenebilir.
+
+89
+00:05:21,790 --> 00:05:25,790
+Ve böylece tüm sinir ağınızın hesaplayacağı şey; büyük bir doğrusal fonksiyondan
+
+90
+00:05:25,790 --> 00:05:28,550
+çok uzak olmayan, ki o
+
+91
+00:05:28,550 --> 00:05:32,250
+çok karmaşık doğrusal olmayan bir işlev yerine basit bir fonksiyondur.
+
+92
+00:05:32,250 --> 00:05:34,650
+Ve ayrıca aşırı öğrenmenin çok daha az mümkün olduğu.
+
+93
+00:05:34,650 --> 00:05:38,870
+Ve yine, program alıştırmasında kendiniz için düzenlileştirme uyguladığınızda,
+
+94
+00:05:38,870 --> 00:05:41,350
+bu efektlerin bazılarını kendiniz görebileceksiniz.
+
+95
+00:05:41,350 --> 00:05:45,680
+Düzenlileştirme konusundaki tartışmamızı tamamlamadan önce,
+
+96
+00:05:45,680 --> 00:05:48,310
+size sadece bir uygulama ipucu vermek istiyorum.
+
+97
+00:05:48,310 --> 00:05:52,145
+Bu ipucu, düzenlileştirmeyi uygularken
+
+98
+00:05:52,145 --> 00:05:58,730
+maliyet fonksiyonu J tanımımızı aldık ve aslında değiştirdik
+
+99
+00:05:58,730 --> 00:06:05,810
+ağırlığı fazla büyük olan bu ekstra terimi ekleyerek.
+
+100
+00:06:05,810 --> 00:06:09,230
+Ve eğer bayır inişi (gradient descent) uygularsanız,
+
+101
+00:06:09,230 --> 00:06:18,605
+bayır inişinde (gradient descent) hata ayıklama (debug) adımlarından biri, maliyet fonksiyonu J'nin
+
+102
+00:06:18,605 --> 00:06:22,520
+bayır inişinin yükselti (elevation) sayısının bir fonksiyonu olarak çizmektir ve siz görmek istediğiniz şey
+
+103
+00:06:22,520 --> 00:06:27,730
+Maliyet fonksiyonu J'nin, bayır inişinin her yükseltisinden sonra monoton olarak azalmasıdır.
+
+104
+00:06:27,730 --> 00:06:30,820
+Ve eğer düzenlileştirmeyi (regularization) uyguluyorsanız,
+
+105
+00:06:30,820 --> 00:06:35,350
+lütfen J'nin bu yeni tanıma sahip olduğunu unutmayın.
+
+106
+00:06:35,350 --> 00:06:37,735
+Eğer J'nin eski tanımına göre çizerseniz,
+
+107
+00:06:37,735 --> 00:06:39,370
+sadece bu ilk terim,
+
+108
+00:06:39,370 --> 00:06:42,290
+o zaman monoton bir düşüş görmeyebilirsiniz.
+
+109
+00:06:42,290 --> 00:06:45,030
+Bu nedenle bayır inişinde hata ayıklamak için emin olmalısınız gereken şey
+
+110
+00:06:45,030 --> 00:06:49,910
+bu ikinci terimi de içeren J'nin bu yeni tanımını çiziyorsunuz
+
+111
+00:06:49,910 --> 00:06:54,015
+Aksi halde, her bir yükseltide J'nin monoton olarak azaldığını göremeyebilirsiniz.
+
+112
+00:06:54,015 --> 00:06:57,140
+Bu yüzden L için düzenlileştirme
+
+113
+00:06:57,140 --> 00:07:01,435
+aslında benim derin öğrenme modüllerinin eğitiminde sık kullandığım bir düzenlileştirme tekniğidir.
+
+114
+00:07:01,435 --> 00:07:05,480
+Derin öğrenmede, bazen başka bir düzenlileştirme tekniği de kullanılır
+
+115
+00:07:05,480 --> 00:07:07,390
+bu seyreltme düzenlileştirmesi (dropout regularization) olarak isimlendirilir.
+
+116
+00:07:07,390 --> 00:07:09,280
+Buna bir sonraki videoda bakalım.
