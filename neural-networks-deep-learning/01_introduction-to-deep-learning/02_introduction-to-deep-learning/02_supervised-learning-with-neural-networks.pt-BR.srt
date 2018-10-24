@@ -1,0 +1,599 @@
+1
+00:00:00,320 --> 00:00:02,850
+Há muito exagero
+sobre redes neurais.
+
+2
+00:00:02,850 --> 00:00:07,170
+E talvez, parte desse exagero se justifique, 
+devido à quão bem estão funcionando
+
+3
+00:00:07,170 --> 00:00:08,220
+Mas acontece que por
+
+4
+00:00:08,220 --> 00:00:12,710
+enquanto, quase todo valor econômico criado
+pelas redes neurais tem sido através
+
+5
+00:00:12,710 --> 00:00:15,970
+de um tipo de aprendizado de m´áquina,
+chamado de aprendizagem supervisionada.
+
+6
+00:00:15,970 --> 00:00:19,120
+Vejamos o que isso quer dizer, e
+também alguns exemplos.
+
+7
+00:00:19,120 --> 00:00:23,030
+Na aprendizagem supervisionada,
+tem-se alguma entrada x, e
+
+8
+00:00:23,030 --> 00:00:27,210
+você quer que uma função de aprendizagem
+de um aplicativo aponte para uma saída y.
+
+9
+00:00:27,210 --> 00:00:31,890
+Assim, por exemplo, acabamos de ver o 
+aplicativo de previsão de preços de habitações, onde
+
+10
+00:00:31,890 --> 00:00:37,850
+são introduzidas algumas características da casa e
+tenta-se estimar o preço y.
+
+11
+00:00:37,850 --> 00:00:42,180
+Eis alguns outros exemplos que redes neurais têm sido aplicadas com
+
+12
+00:00:42,180 --> 00:00:43,940
+muita eficiência.
+
+13
+00:00:43,940 --> 00:00:48,180
+Provavelmente, o o único aplicativo mais lucrativo
+em aprendizagem profunda hoje é
+
+14
+00:00:48,180 --> 00:00:53,150
+publicidade on-line, talvez não o mais inspirador, mas certamente muito lucrativo,
+
+15
+00:00:53,150 --> 00:00:59,770
+no qual, inserindo informações sobre um anúncio no site que se está pensando
+
+16
+00:00:59,770 --> 00:01:04,020
+em exibir, e alguma informação 
+sobre o usuário, as redes neurais têm
+
+17
+00:01:04,020 --> 00:01:07,700
+conseguido predizer muito bem se você
+irá ou não clicar no anúncio.
+
+18
+00:01:07,700 --> 00:01:08,770
+E ao mostrar a você e
+
+19
+00:01:08,770 --> 00:01:12,800
+aos usuários os anúncios que vocês estão mais
+propensos a clicarem neles, isso tem sido
+
+20
+00:01:12,800 --> 00:01:17,830
+um aplicativo de redes neurais extremamente lucrativo
+ em várias empresas.
+
+21
+00:01:17,830 --> 00:01:21,040
+Dado que a capacidade de exibir anúncios
+nos quais você está mais propenso a
+
+22
+00:01:21,040 --> 00:01:23,690
+clicar neles tem um impacto direto no resultado
+
+23
+00:01:23,690 --> 00:01:26,209
+final de algumas das grandes empresas
+de publicidade on-line.
+
+24
+00:01:27,630 --> 00:01:32,150
+Visão computadorizada também fez 
+grandes avanços nos últimos anos,
+
+25
+00:01:32,150 --> 00:01:34,050
+a maioria devida à aprendizagem profunda.
+
+26
+00:01:34,050 --> 00:01:38,140
+Então você fornece uma imagem de entrada
+ e quer um índice, de saída
+
+27
+00:01:38,140 --> 00:01:42,295
+digamos entre 1 e 1.000,
+ tentando lhe dizer se esta imagem,
+
+28
+00:01:42,295 --> 00:01:44,305
+poderia ser qualquer uma delas, digo, uma das 1000 imagens diferentes.
+
+29
+00:01:44,305 --> 00:01:47,505
+Assim, poderia ser usado para marcação de fotos.
+
+30
+00:01:47,505 --> 00:01:51,525
+Acho que os recentes progressos no reconhecimento de fala também têm sido muito emocionantes,
+
+31
+00:01:51,525 --> 00:01:54,915
+onde agora podemos inserir um clipe de áudio para uma rede neural, e
+
+32
+00:01:54,915 --> 00:01:57,930
+termos uma transcrição dele, em texto, como saída.
+
+33
+00:01:57,930 --> 00:02:02,400
+Tradução de máquina também teve grandes avanços graças a aprendizagem profunda onde agora
+
+34
+00:02:02,400 --> 00:02:06,400
+podemos ter uma rede neural entrando com 
+uma sentença em inglês e uma saída direta, digamos,
+
+35
+00:02:06,400 --> 00:02:08,010
+como uma sentença em chinês.
+
+36
+00:02:08,010 --> 00:02:12,930
+E nos veículos autoconduzidos, poderíamos 
+fornecer uma imagem. digamos uma figura do que estiver em
+
+37
+00:02:12,930 --> 00:02:17,600
+frente ao nosso carro, bem como alguma
+informação de um radar, e
+
+38
+00:02:17,600 --> 00:02:22,080
+baseado neles, talvez uma rede neural
+possa ser treinada para lhe dizer a posição
+
+39
+00:02:22,080 --> 00:02:23,100
+dos outros carros na estrada.
+
+40
+00:02:23,100 --> 00:02:27,870
+Então isso passa a ser um componente chave
+em sistemas de veículos autoconduzidos.
+
+41
+00:02:27,870 --> 00:02:32,730
+Então, muita criação de valor usando
+redes neurais tem sido habilmente
+
+42
+00:02:32,730 --> 00:02:36,360
+selecionar o que deveria ser o x e
+o que deveria ser o y
+
+43
+00:02:36,360 --> 00:02:42,000
+no seu problema em particular, e então ajustar
+ este componente de aprendizagem supervisionada aos
+
+44
+00:02:42,000 --> 00:02:45,660
+sistemas geralmente ainda maiores, tais
+como em veículos autoconduzidos.
+
+45
+00:02:45,660 --> 00:02:49,880
+Acontece que tipos ligeiramente diferentes de redes neurais são úteis para
+
+46
+00:02:49,880 --> 00:02:51,965
+diferentes aplicações.
+
+47
+00:02:51,965 --> 00:02:57,105
+Por exemplo, no aplicativo de imóveis que vimos no
+
+48
+00:02:57,105 --> 00:03:01,525
+vídeo anterior, usamos uma arquitetura padrão
+universalizada de rede neural, certo?
+
+49
+00:03:01,525 --> 00:03:05,515
+Talvez para o setor imobiliário e publicidade on-line
+podem ser relativamente
+
+50
+00:03:05,515 --> 00:03:08,625
+rede neural padrão,
+como a que vimos.
+
+51
+00:03:10,415 --> 00:03:16,120
+Para aplicativos de imagens, geralmente usaremos
+redes neurais convolucionais,
+
+52
+00:03:16,120 --> 00:03:17,680
+abreviadas como CNNs.
+
+53
+00:03:18,730 --> 00:03:21,000
+E para dados de sequência.
+
+54
+00:03:21,000 --> 00:03:24,840
+Assim, por exemplo, o áudio tem uma componente temporal, certo?
+
+55
+00:03:24,840 --> 00:03:29,990
+Áudio é descartado ao longo do tempo, 
+então o áudio é representado mais naturalmente
+
+56
+00:03:29,990 --> 00:03:35,110
+como séries unidimensionais de tempo ou
+como uma sequência temporal unidimensional.
+
+57
+00:03:35,110 --> 00:03:39,420
+E então para dados de sequência, você frequentemente usa um RNN,
+
+58
+00:03:39,420 --> 00:03:42,810
+que é uma Rede Neural Recorrente.
+
+59
+00:03:42,810 --> 00:03:47,270
+Linguagem, Inglês e Chinês, os
+alfabetos ou as palavras vêm uma de cada vez.
+
+60
+00:03:47,270 --> 00:03:51,825
+Assim, linguagem também é mais naturalmente
+representada como dados de sequência.
+
+61
+00:03:51,825 --> 00:03:57,700
+Bem como versões mais complexas de RNNs
+são geralmente usadas para tais aplicativos.
+
+62
+00:03:57,700 --> 00:04:01,360
+E, para aplicativos mais complexos,
+como veículos autoconduzidos, onde temos
+
+63
+00:04:01,360 --> 00:04:06,201
+uma imagem, isso sugere mais o uso de estrutura CNN
+, rede neural convolucional, e
+
+64
+00:04:06,201 --> 00:04:09,480
+informações de radar, estas já são
+algo um pouco diferente.
+
+65
+00:04:09,480 --> 00:04:12,362
+Você poderia com uma rede mais personalizada, ou
+
+66
+00:04:12,362 --> 00:04:16,880
+algo mais complexo,
+ como uma arquitetura de rede neural híbrida.
+
+67
+00:04:17,880 --> 00:04:23,102
+Isto foi só para ser um pouco mais concreto sobre o que são as arquiteturas de rede CNN padrão e
+
+68
+00:04:23,102 --> 00:04:24,950
+as arquiteturas de rede RNN.
+
+69
+00:04:24,950 --> 00:04:29,790
+Então na literatura você pode ter encontrado figuras assim como esta.
+
+70
+00:04:29,790 --> 00:04:31,742
+Esta é uma rede neural padrão.
+
+71
+00:04:31,742 --> 00:04:33,800
+Pode ter visto figuras como esta.
+
+72
+00:04:33,800 --> 00:04:38,830
+Bem, este é um exemplo de Rede Neural Convolucional, e veremos
+
+73
+00:04:38,830 --> 00:04:42,958
+num curso mais adiante exatamente o que esta figura
+significa e como podemos implementá-la.
+
+74
+00:04:42,958 --> 00:04:48,560
+Mas, redes convolucionais
+são frequentemente usadas para dados de imagens.
+
+75
+00:04:48,560 --> 00:04:51,100
+Você pode ter visto também
+figuras como esta aqui.
+
+76
+00:04:51,100 --> 00:04:54,590
+E aprenderá como implementar isso
+num curso mais adiante.
+
+77
+00:04:54,590 --> 00:04:57,180
+Redes neurais recorrentes
+são muito boas para
+
+78
+00:04:57,180 --> 00:05:03,220
+este tipo de dados de sequência unidimensionais
+que podem ser um componente temporal.
+
+79
+00:05:03,220 --> 00:05:07,310
+Também pode ter ouvido falar sobre
+aplicativos de aprendizado de máquina
+
+80
+00:05:07,310 --> 00:05:11,000
+tanto para Dados Estruturados 
+como para Dados Não Estruturados.
+
+81
+00:05:11,000 --> 00:05:11,960
+Eis o que estes termos significam:
+
+82
+00:05:11,960 --> 00:05:15,620
+Dados Estruturados significam
+basicamente dados que vêm de bancos de dados.
+
+83
+00:05:16,910 --> 00:05:22,010
+Então, por exemplo, na previsão de preços de habitação, você pode ter um banco de dados ou
+
+84
+00:05:22,010 --> 00:05:25,140
+as colunas que informam o tamanho e o número de quartos.
+
+85
+00:05:25,140 --> 00:05:30,460
+Estes são dados estruturados, ou
+predizer se um usuário vai ou não vai
+
+86
+00:05:30,460 --> 00:05:34,332
+clicar num anúncio, você poderia ter esta informação
+sobre o usuário, como idade,
+
+87
+00:05:34,332 --> 00:05:38,590
+alguma informação sobre o anúncio, e então
+rotular o que estamos tentando predizer.
+
+88
+00:05:38,590 --> 00:05:43,470
+Isso são dados estruturados,
+que implicam em cada uma das características
+
+89
+00:05:43,470 --> 00:05:46,740
+como o tamanho da casa,
+o número de quartos, ou
+
+90
+00:05:46,740 --> 00:05:51,530
+a idade do usuário,
+têm um significado bem definido.
+
+91
+00:05:51,530 --> 00:05:57,520
+Em contrapartida, dados não estruturados referem-se
+a coisas como áudio, áudio não tratado,
+
+92
+00:05:57,520 --> 00:06:02,795
+ou imagens onde gostaríamos de 
+reconhecer algo, ou um texto, que estivesse contido nela.
+
+93
+00:06:02,795 --> 00:06:06,235
+Aqui, as características poderiam ser
+valores de pixels numa imagem, ou
+
+94
+00:06:06,235 --> 00:06:09,195
+uma ou outra palavra num trecho de um texto.
+
+95
+00:06:09,195 --> 00:06:11,335
+Historicamente, tem sido muito mais difícil para
+
+96
+00:06:11,335 --> 00:06:16,480
+os computadores darem sentido aos dados 
+não estruturados se compararmos com dados estruturados.
+
+97
+00:06:16,480 --> 00:06:21,270
+E o fato da raça humana ter evoluído para ser 
+muito boa no entendimento
+
+98
+00:06:21,270 --> 00:06:23,278
+de áudios ou de imagens.
+
+99
+00:06:23,278 --> 00:06:25,390
+E então o texto foi uma invenção mais recente, mas
+
+100
+00:06:25,390 --> 00:06:28,760
+seres humanos são realmente muito bons na
+interpretação de dados não estruturados.
+
+101
+00:06:28,760 --> 00:06:33,800
+Desta forma, uma das coisas mais excitantes 
+sobre o desenvolvimento das redes neurais, é que
+
+102
+00:06:33,800 --> 00:06:38,280
+graças ao aprendizado profundo,
+ e às redes neurais, computadores são muito melhores
+
+103
+00:06:38,280 --> 00:06:43,320
+em interpretar dados não estruturados, 
+comparando-se à alguns anos atrás.
+
+104
+00:06:43,320 --> 00:06:48,240
+E isso criou oportunidades 
+para várias novas funções que se utilizam de
+
+105
+00:06:48,240 --> 00:06:52,229
+reconhecimento de fala, imagem, 
+processamento de linguagem natural em forma textual,
+
+106
+00:06:53,230 --> 00:06:57,180
+o que é muito mais 
+do que era possível a 2 ou 3 anos atrás.
+
+107
+00:06:57,180 --> 00:07:00,940
+Acredito que pela empatia 
+em aprender sobre dados não estruturados,
+
+108
+00:07:00,940 --> 00:07:05,250
+você provavelmente irá ouvir mais nas mídias, 
+a respeito dos avanços da rede neural nesse campo,
+
+109
+00:07:05,250 --> 00:07:10,060
+apenas porquê é interessante 
+quando a rede neural reconhece um gato.
+
+110
+00:07:10,060 --> 00:07:12,750
+Todos nós gostamos disso, 
+e todos sabemos o que isso significa.
+
+111
+00:07:12,750 --> 00:07:16,290
+Entretanto, ocorre que inúmeros 
+valores econômicos a curto prazo que a rede neural
+
+112
+00:07:16,290 --> 00:07:21,270
+está criando, também 
+está presente em dados estruturados,
+
+113
+00:07:21,270 --> 00:07:25,690
+como os sistemas de propaganda 
+mais desenvolvidos, as melhores recomendações de ganho, e
+
+114
+00:07:25,690 --> 00:07:30,730
+também uma habilidade muito melhor 
+para processar grandes bancos de dados, dos quais
+
+115
+00:07:30,730 --> 00:07:34,290
+muitas companhias 
+dependem de predições acuradas.
+
+116
+00:07:34,290 --> 00:07:38,230
+Assim, nesse curso, muitas das técnicas 
+que iremos estudar, irão abordar
+
+117
+00:07:38,230 --> 00:07:41,690
+tanto dados estruturados quanto 
+não estruturados.
+
+118
+00:07:41,690 --> 00:07:43,970
+Para explicar os algoritmos,
+
+119
+00:07:43,970 --> 00:07:49,210
+vamos focar mais nos exemplos 
+que se utilizam de dados não estruturados.
+
+120
+00:07:49,210 --> 00:07:53,280
+No entanto, enquanto você passa por aplicativos 
+de rede neural com sua própria equipe,
+
+121
+00:07:53,280 --> 00:07:58,360
+espero que você encontre uso para ambos
+ dados estruturados e não estruturados.
+
+122
+00:07:59,590 --> 00:08:03,390
+Assim, redes neurais transformaram
+ o aprendizado supervisionado e
+
+123
+00:08:03,390 --> 00:08:06,500
+estão criando valores econômicos gigantescos.
+
+124
+00:08:06,500 --> 00:08:09,910
+Entretanto, sabe-se que 
+os ideais técnicos por trás das redes neurais
+
+125
+00:08:09,910 --> 00:08:13,520
+sempre estiveram por perto, 
+algumas vezes por várias décadas.
+
+126
+00:08:13,520 --> 00:08:17,980
+Então, porque apenas atualmente 
+elas estão se destacando e funcionando tão bem?
+
+127
+00:08:17,980 --> 00:08:21,970
+No próximo vídeo, falaremos sobre 
+o por quê de apenas recentemente
+
+128
+00:08:21,970 --> 00:08:25,940
+as redes neurais terem se tornado 
+esta ferramenta tão poderosa que você pode utilizar.

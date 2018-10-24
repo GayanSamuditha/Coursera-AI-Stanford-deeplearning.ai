@@ -1,0 +1,208 @@
+1
+00:00:00,000 --> 00:00:03,224
+So what does deep learning
+have to do with the brain?
+
+2
+00:00:03,224 --> 00:00:06,918
+Hikayenin sonunu baştan söyleyeyim, pek bir ilgisi yok.
+
+3
+00:00:06,918 --> 00:00:11,539
+Yine de insanlar derin öğrenme ve beyin arasında
+
+4
+00:00:11,539 --> 00:00:13,400
+neden bir benzerlik kuruyor kısaca ona bakalım.
+
+5
+00:00:13,400 --> 00:00:17,624
+Bir sinir ağı kurarken yaptığınız şey şudur, ileri yayılım ve
+
+6
+00:00:17,624 --> 00:00:18,302
+geriye yayılım.
+
+7
+00:00:18,302 --> 00:00:22,774
+Fakat bu gördüğünüz denklemlerin anlattığı Gradyan (Eğim) İnişinin
+
+8
+00:00:22,774 --> 00:00:27,122
+mantığını anlatmak çok kolay olmadığından
+
+9
+00:00:27,122 --> 00:00:30,857
+beyin benzetmesini kullanarak basitleştirilmiş bir açıklama yapmak
+
+10
+00:00:30,857 --> 00:00:34,380
+daha kolay oluyor.
+
+11
+00:00:34,380 --> 00:00:37,707
+Fakat bu benzetmenin basitiği bu konu hakkında konuşanlar
+
+12
+00:00:37,707 --> 00:00:41,898
+ve medya için baştan çıkarıcı oluyor
+
+13
+00:00:41,898 --> 00:00:44,808
+ve popülerlik kazanıyor.
+
+14
+00:00:44,808 --> 00:00:49,214
+Gerçekte ise örneğin sigmoid aktivasyon fonksiyonlu
+
+15
+00:00:49,214 --> 00:00:54,468
+bir lojistik regresyon birimi ile burada gördüğünüz
+
+16
+00:00:54,468 --> 00:00:58,427
+beyindeki tek bir nöronun resmi arasında ufak bir benzerlik var.
+
+17
+00:00:58,427 --> 00:01:02,326
+Bu resimde biyolojik nöron
+
+18
+00:01:02,326 --> 00:01:07,941
+yani beyninizdeki bir hücre, diğer nöronlardan elektriksel işaretler alıyor.
+
+19
+00:01:07,941 --> 00:01:12,056
+Belki x1, x2, x3 veya belki diğer nöronlardan a1, a2, a3
+
+20
+00:01:12,056 --> 00:01:17,419
+Basit bir eşik değer hesaplaması yapıyor ve o eşiği aşıp nöron ateşlenirse
+
+21
+00:01:17,419 --> 00:01:23,366
+akson boyunca, bu uzun yol boyunca, başka nöronlara ulaşmak üzere bir elektriksel atım gönderiyor.
+
+22
+00:01:23,366 --> 00:01:28,181
+Yani tek bir lojistik regresyon birimi ile (yapay sinir ağındaki tek bir nöron ile)
+
+23
+00:01:28,181 --> 00:01:31,365
+sağdaki resimde gördüğünüz gibi biyolojik bir nöron
+
+24
+00:01:31,365 --> 00:01:34,809
+arasında indirgemeci bir benzerlik var.
+
+25
+00:01:34,809 --> 00:01:39,356
+Fakat bence bugün sinirbilimcilerin bile tek bir nöronun ne yaptığı konusunda
+
+26
+00:01:39,356 --> 00:01:41,441
+pek bir fikri yok.
+
+27
+00:01:41,441 --> 00:01:45,532
+Tek bir nöron bile sinirbilim ile nitelendirmek için fazla
+
+28
+00:01:45,532 --> 00:01:48,141
+karmaşık görünüyor.
+
+29
+00:01:48,141 --> 00:01:52,719
+Her ne kadar nöronun yaptığı şey lojistik regresyona
+
+30
+00:01:52,719 --> 00:01:56,866
+benzer olsa da henüz hiçbir insanın anlamadığı başka
+
+31
+00:01:56,866 --> 00:01:59,101
+şeyler de yapıyor.
+
+32
+00:01:59,101 --> 00:02:00,091
+Örneğin,
+
+33
+00:02:00,091 --> 00:02:05,713
+beyindeki nöronların tam olarak nasıl öğrendikleri hala gizemini koruyor.
+
+34
+00:02:05,713 --> 00:02:09,897
+İnsan beyni Geriye Yayılım'a, Gradyan İnişi'ne benzer bir algoritma mı kullanıyor
+
+35
+00:02:09,897 --> 00:02:14,269
+yoksa bambaşka bir öğrenme yöntemi mi kullanıyor
+
+36
+00:02:14,269 --> 00:02:18,277
+bugün çok net bilemiyoruz.
+
+37
+00:02:18,277 --> 00:02:23,515
+Bu yüzden ben Derin Öğrenmeyi düşündüğümde çok kompleks fonksiyonları, x-y arasındaki eşleşmeleri
+
+38
+00:02:23,515 --> 00:02:28,679
+girdiler ve çıktılar arasındaki ilişkileri çok iyi öğrenebilen bir Eğitmenli Öğrenme
+
+39
+00:02:28,679 --> 00:02:32,614
+yöntemi olarak düşünüyorum.
+
+40
+00:02:32,614 --> 00:02:37,205
+Beyin benzetmesi ise bir zamanlar faydalı olsa bile bence artık bu alan
+
+41
+00:02:37,205 --> 00:02:41,960
+bu benzetmeyi geçersiz kılacak bir noktaya ilerledi.
+
+42
+00:02:41,960 --> 00:02:45,633
+Ben de bu benzetmeyi artık pek kullanmamaya çalışıyorum.
+
+43
+00:02:45,633 --> 00:02:48,809
+Evet beyin ve sinir ağları hakkında söyleyeceklerim bu kadar.
+
+44
+00:02:48,809 --> 00:02:52,554
+Yapay Görme alanının diğer Derin Öğrenme uygulamalarına göre
+
+45
+00:02:52,554 --> 00:02:56,684
+insan beyninden daha fazla ilham
+
+46
+00:02:56,684 --> 00:02:57,333
+aldığını düşünüyorum.
+
+47
+00:02:57,333 --> 00:03:02,835
+Yine de şahsen insan beyni benzetmesini eskisine göre çok daha az kullanıyorum.
+
+48
+00:03:02,835 --> 00:03:05,216
+Bu video için bu kadar.
+
+49
+00:03:05,216 --> 00:03:08,423
+Artık İleri Yayılım ve Geriye Yayılımı ve Gradyan İnişini, hatta bunları derin sinir ağlarında
+
+50
+00:03:08,423 --> 00:03:11,182
+nasıl kullanacağınızı biliyorsunuz.
+
+51
+00:03:11,182 --> 00:03:13,408
+Prgramlama ödevinde bol şanslar.
+
+52
+00:03:13,408 --> 00:03:17,109
+İkinci kursta bu türden fikirler daha fazla anlatmayı iple çekiyorum.
