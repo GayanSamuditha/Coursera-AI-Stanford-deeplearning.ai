@@ -1,4 +1,4 @@
-# Coursera-Stanford-AI
+# Coursera AI from Stanford University and deeplearning.ai
 
 ## 1. Machine Learning
 
